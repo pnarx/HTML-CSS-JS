@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- css dosyasını bootstrap ile dahil ettik head kısmına eklendiğine dikkat et
+    min.css uzantısıyk-la eklendi-->
+    <link rel="stylesheet" href="/bootstarpdersleri/css/bootstrap.min.css">
+</head>
+<body>
+
+    <!-- eğer senin containerın px olarak hareket ettiğinde sayfanın tamamını kaplayıp l-kaplamama durumunu ayarlayabilirsin-->
+<div class="container-fluid bg-info">
+    <!--container-fluid ile sayfanın tamamını kullandım 
+    bg-warning arka plan rengi-->
+    <h1 style="text-align: center;"> WEB SİTEM </h1>
+</div> 
+<!--GRİD yapısına baktığımıza zaman
+    bir satırını bölünme yapısına grid denir
+bootstarpte bir satır 12 parçadan oluşur
+-->
+<div class="container-fluid">
+    <div class="row bg-warning "style="height: 70px;">
+      <div class="col-sm bg-primary text-light align-items-start">
+        col 1
+      </div>
+      <div class="col-sm bg-success text-light">
+        col 2
+      </div>
+      <div class="col-sm bg-transparent text-light">
+        col3
+      </div>
+    </div>
+  </div>
+<!--divler üzerinde hareket için marning
+tex içine yazılan ifadelerin arasındaki boşluklar için padding-->
+
+<!-------Alert kullanımı-------------------------------------------->
+ <!-- sayfasımızda uyarı mesajlarını kullanabileceğimiz bir yerdir-->   
+<div class="container">
+  <div class ="alert alert-primary mt-4" role="alert">
+     örnek alert
+  </div>
+
+  <div class="alert alert-secondary" role="alert">
+    örnek2 alert
+  </div>
+  <div class ="alert alert-success" role="alert">
+    örnek alert
+ </div>
+
+ <div class="alert alert-danger" role="alert">
+   örnek2 alert
+ </div>
+ <div class ="alert alert-info" role="alert">
+    örnek alert
+ </div>
+
+ <div class="alert alert-warning" role="alert">
+   örnek2 alert
+ </div>
+
+
+
+
+
+</div>
+
+<!--js ifadesini projeye dahil ettik (min.js olarak eklendi )
+    body kısmına eklendiğine dikkat et -->
+ <script src="js/bootstrap.min.js"> </script>
+</body>
+</html>

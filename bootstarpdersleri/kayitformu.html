@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- css dosyasını bootstrap ile dahil ettik head kısmına eklendiğine dikkat et
+    min.css uzantısıyk-la eklendi-->
+    <link rel="stylesheet" href="/bootstarpdersleri/css/bootstrap.min.css">
+</head>
+<body>
+    <!--
+ ÖRNEK - 1
+
+<div class="conteinar col-form-label-lg "> 
+    <h2 style="text-align: center;"> KAYIT FORMU</h2>
+    <form class="mt-5 col">
+        <div class="row mx-10  ">  
+            <div class="form-group  col-6 ">
+                <label for="isim">Ad </label>
+                <input type="text" class="form-control" id="isim" aria-describedby="emailHelp">
+                <small id="emailHelp" class="form-text text-muted">Zorunlu alan</small>
+              </div>
+              <div class="form-group   col-6" >
+                <label for="soyad">Soyad</label>
+                <input type="text" class="form-control" id="soyad" aria-describedby="soyad">
+                <small id="soyad" class="form-text text-muted">Zorunlu alan</small>
+              </div>
+        </div>
+
+        <div class="row ">  
+            <div class="form-group  col-6 ">
+                <label for="email">E-mail</label>
+                <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+                <small id="emailHelp" class="form-text text-muted">Zorunlu alan</small>
+              </div>
+              <div class="form-group   col-6" >
+                <label for="Sifre">Şifre</label>
+                <input type="password" class="form-control" id="Sifre" aria-describedby="password">
+                <small id="pasword" class="form-text text-muted">En az 8 karakter</small>
+              </div>
+        </div>
+       
+       
+
+
+<h5> Eğtim Bilgilerim </h5>
+<div class="conteainer">   
+    <div class="row"> 
+        <div class="col -6">  
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+        <label class="form-check-label" for="exampleRadios1">
+          Default radio
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+        <label class="form-check-label" for="exampleRadios2">
+          Second default radio
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" disabled>
+        <label class="form-check-label" for="exampleRadios3">
+          Disabled radio
+        </label>
+      </div>
+      <br>
+      <br>
+    </div>
+    <div class="col-6">  
+
+    </div>
+ </div>
+</div>
+<div class="form-group form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Bilgilerimi Onaylıyorum </label>
+  </div>
+<button type="submit" class="btn btn-primary">Submit</button>
+      
+      </form>
+      
+ </div>
+   -->
+   <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-dark">
+    <a class="navbar-brand " href="slider.html" style="color: aliceblue;">
+        <img src="/bootstarpdersleri/resimler/i2.png" width="40" height="30" class="d-inline-block align-top" alt="" >
+         PANSİYON
+      </a>
+    
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse " id="navbarSupportedContent" >
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link  " href="slider.html" style="color: aliceblue;"> Anasayfa <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active " style="color: aliceblue;" href="kayitformu.html">İletişim</a>
+        </li>
+
+        <li class="nav-item active dropdown">
+            <a class="nav-link dropdown-toggle "style="color: aliceblue;" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+              Hakkında
+            </a>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Görseller</a>
+                <a class="dropdown-item" href="#">Pansiyon Tarihi</a>
+              
+                <a class="dropdown-item" href="#">Oda Fiyatları</a>
+             
+        </li>
+
+        <li class="nav-item active" >
+            <a class="nav-link active" href="#" style="color: aliceblue;">Rezervasyon</a>
+        </li>
+      </ul>
+
+    </div>
+  </nav>
+   <div class="conteinar  mt-5 mx-10"> 
+   
+  
+ <div class="col-sm  my-105 mx-100 mt- "   >   
+   <form class="was-validated mt-5 ">
+    <h4 style="text-align: center; padding-top: 15px;  " > Kayıt Formu</h4>
+    <div class="mb-3">
+      <label for="validationTextarea">Kişisel Bilgileriniz</label>
+      <textarea class="form-control is-invalid" id="validationTextarea" placeholder="Kısaca kendinizden bahsedin.." required> </textarea>
+      <div class="invalid-feedback">
+       En az 200 karakter giriniz
+      </div>
+    </div>
+  
+
+  <label for="validationTextarea">Cinsiyet</label><br>
+    <div class="custom-control custom-radio">
+    
+      <input type="radio" class="custom-control-input" id="customControlValidation2" name="radio-stacked" required>
+      <label class="custom-control-label" for="customControlValidation2">Bayan</label>
+    </div>
+    <div class="custom-control custom-radio mb-3">
+      <input type="radio" class="custom-control-input" id="customControlValidation3" name="radio-stacked" required>
+      <label class="custom-control-label" for="customControlValidation3">Bay</label>
+      <div class="invalid-feedback">Lütfen doldurunuz.</div>
+    </div>
+  
+    <div class="mb-3">
+      <select class="custom-select" required>
+        <option value="">Eğitim bilgilerim...</option>
+        <option value="1">Lisans</option>
+        <option value="2">Yükseklisans</option>
+        <option value="3">Lise</option>
+        <option value="4">Ortaokul</option>
+        <option value="5">Diğer</option>
+      </select>
+      <div class="invalid-feedback">Zorunlu alan.</div>
+    </div>
+    <div class="mb-3">
+        <select class="custom-select" required>
+          <option value="">Yaşınız...</option>
+          <option value="1">18-25</option>
+          <option value="2">25-35</option>
+          <option value="3">35-45</option>
+          <option value="4">45+</option>
+        
+        </select>
+        <div class="invalid-feedback">Zorunlu alan.</div>
+      </div>
+    <div class="custom-file mb-3">
+      <input type="file" class="custom-file-input" id="validatedCustomFile" required>
+      
+      <label class="custom-file-label" for="validatedCustomFile">Dosya Seçiniz...</label>
+
+      <div class="invalid-feedback">Zorunlu alan.</div>
+    </div>
+  
+    <div class="mb-3">
+      <div class="input-group is-invalid">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="validatedInputGroupPrepend">@</span>
+        </div>
+        <input type="text" class="form-control is-invalid" aria-describedby="validatedInputGroupPrepend" required>
+      </div>
+      <div class="invalid-feedback">
+       E-mail adresinizi giriniz.
+      </div>
+    </div>
+  
+    <div class="mb-3">
+      <div class="input-group is-invalid">
+       
+        <select class="custom-select" id="validatedInputGroupSelect" required>
+          <option value="">Seçiniz...</option>
+          <option value="1">2000-8000</option>
+          <option value="2">8000-10000</option>
+          <option value="3">10000-daha fazla</option>
+        </select>
+      </div>
+      <div class="invalid-feedback">
+        Talebiniz..
+      </div>
+    </div>
+  
+    <div class="input-group is-invalid">
+      <div class="custom-file">
+        <input type="file" class="custom-file-input" id="validatedInputGroupCustomFile" required>
+        <label class="custom-file-label" for="validatedInputGroupCustomFile">Dosya seçiniz...</label>
+      </div>
+  
+    </div>
+    <div class="invalid-feedback">
+     Özgeçmişinizi ekleyiniz..
+    </div>
+    <div class="custom-control custom-checkbox mb-3">
+        <input type="checkbox" class="custom-control-input" id="customControlValidation1" required> <br>
+        <label class="custom-control-label" for="customControlValidation1">Onaylıyorum</label>
+        <div class="invalid-feedback ">Bilgilerinizin doğruluğundan emin olun.</div>
+      </div>
+      <br>
+      <br>
+      <button type="submit" class="btn btn-secondary">Gönder </button>
+  </form>
+
+<!--   <div class="col-6 my-105 mx-100  " style="width:500px;">
+    <div class="card  mx-3 ml-5 ">
+      
+            <form class="was-validated  mx-3  ">
+             <h4 style="text-align: center;  " > Kayıt Formu</h4>
+             <div class="mb-3">
+               <label for="validationTextarea">Kişisel Bilgileriniz</label>
+               <textarea class="form-control is-invalid" id="validationTextarea" placeholder="Kısaca kendinizden bahsedin.." required> </textarea>
+               <div class="invalid-feedback">
+                En az 200 karakter giriniz
+               </div>
+             </div>
+           
+         
+           <label for="validationTextarea">Cinsiyet</label><br>
+             <div class="custom-control custom-radio">
+             
+               <input type="radio" class="custom-control-input" id="customControlValidation2" name="radio-stacked" required>
+               <label class="custom-control-label" for="customControlValidation2">Bayan</label>
+             </div>
+             <div class="custom-control custom-radio mb-3">
+               <input type="radio" class="custom-control-input" id="customControlValidation3" name="radio-stacked" required>
+               <label class="custom-control-label" for="customControlValidation3">Bay</label>
+               <div class="invalid-feedback">Lütfen doldurunuz.</div>
+             </div>
+           
+             <div class="mb-3">
+               <select class="custom-select" required>
+                 <option value="">Eğitim bilgilerim...</option>
+                 <option value="1">Lisans</option>
+                 <option value="2">Yükseklisans</option>
+                 <option value="3">Lise</option>
+                 <option value="4">Ortaokul</option>
+                 <option value="5">Diğer</option>
+               </select>
+               <div class="invalid-feedback">Zorunlu alan.</div>
+             </div>
+             <div class="mb-3">
+                 <select class="custom-select" required>
+                   <option value="">Yaşınız...</option>
+                   <option value="1">18-25</option>
+                   <option value="2">25-35</option>
+                   <option value="3">35-45</option>
+                   <option value="4">45+</option>
+                 
+                 </select>
+                 <div class="invalid-feedback">Zorunlu alan.</div>
+               </div>
+             <div class="custom-file mb-3">
+               <input type="file" class="custom-file-input" id="validatedCustomFile" required>
+               
+               <label class="custom-file-label" for="validatedCustomFile">Dosya Seçiniz...</label>
+         
+               <div class="invalid-feedback">Zorunlu alan.</div>
+             </div>
+           
+             <div class="mb-3">
+               <div class="input-group is-invalid">
+                 <div class="input-group-prepend">
+                   <span class="input-group-text" id="validatedInputGroupPrepend">@</span>
+                 </div>
+                 <input type="text" class="form-control is-invalid" aria-describedby="validatedInputGroupPrepend" required>
+               </div>
+               <div class="invalid-feedback">
+                E-mail adresinizi giriniz.
+               </div>
+             </div>
+           
+             <div class="mb-3">
+               <div class="input-group is-invalid">
+                
+                 <select class="custom-select" id="validatedInputGroupSelect" required>
+                   <option value="">Seçiniz...</option>
+                   <option value="1">2000-8000</option>
+                   <option value="2">8000-10000</option>
+                   <option value="3">10000-daha fazla</option>
+                 </select>
+               </div>
+               <div class="invalid-feedback">
+                 Talebiniz..
+               </div>
+             </div>
+           
+             <div class="input-group is-invalid">
+               <div class="custom-file">
+                 <input type="file" class="custom-file-input" id="validatedInputGroupCustomFile" required>
+                 <label class="custom-file-label" for="validatedInputGroupCustomFile">Dosya seçiniz...</label>
+               </div>
+           
+             </div>
+             <div class="invalid-feedback">
+              Özgeçmişinizi ekleyiniz..
+             </div>
+             <div class="custom-control custom-checkbox mb-3">
+                 <input type="checkbox" class="custom-control-input" id="customControlValidation1" required>
+                 <label class="custom-control-label" for="customControlValidation1">Onaylıyorum</label>
+                 <div class="invalid-feedback ">Bilgilerinizin doğruluğundan emin olun.</div>
+               </div>
+           </form>
+        
+
+    </div>
+</div>-->
+
+</div> 
+
+
+<!--js ifadesini projeye dahil ettik (min.js olarak eklendi )
+    body kısmına eklendiğine dikkat et -->
+ <script src="js/bootstrap.min.js"> </script>
+
+</body>
+
+</html>
+<!-- <div class="input-group-prepend">
+          <label class="input-group-text" for="validatedInputGroupSelect">Deneyim</label>
+        </div>
+    -->
